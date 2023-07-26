@@ -1,10 +1,11 @@
-dev: manage.py
+dev: 
 	docker-compose up -d
+	npm run start &
 	pipenv run python manage.py runserver
 
-migrate: manage.py
-	pipenv run python manage.py makemigration
+migrate: 
+	pipenv run python manage.py makemigrations
 	pipenv run python manage.py migrate
 
-clean: manage.py
+clean:
 	docker-compose down

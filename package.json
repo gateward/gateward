@@ -1,0 +1,14 @@
+{
+  "name": "gateward",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.9.3",
+    "parcel": "^2.9.3"
+  },
+  "scripts": {
+    "build": "parcel build static/src/main.js --dist-dir static/dist",
+    "start": "parcel static/src/main.js --hmr-port 34471 --dist-dir static/dist"
+  },
+  "dependencies": {
+    "@tabler/core": "^1.0.0-beta19"
+  }
+}

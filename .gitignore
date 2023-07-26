@@ -1,1 +1,4 @@
 db-data/*
+node_modules/*
+static/dist/*
+.parcel-cache/*
